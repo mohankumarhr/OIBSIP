@@ -30,7 +30,7 @@ During my internship at Oasis Infobyte, I had the opportunity to work on various
 To explore these projects further or run them locally, simply clone this repository to your local machine.
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/mohankumarhr/OIBSIP.git
 ```
 
 ---
