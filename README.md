@@ -1,5 +1,5 @@
 
-# Projects Portfolio
+# Oasis Infobyte
 
 This repository contains a collection of projects completed during my internship at Oasis Infobyte. Each project demonstrates various skills and technologies I've learned and applied throughout the internship.
 
