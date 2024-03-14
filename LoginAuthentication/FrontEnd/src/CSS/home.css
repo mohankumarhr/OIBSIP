@@ -1,0 +1,128 @@
+.home-container{
+    background-color: #83C0C1;
+    min-height: 100vh;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20%;
+    color: white;
+}
+
+.navbar h2{
+    font-size: 30px;
+}
+
+.navbar ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+li{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.login-form-container{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.InputBox{
+    position: relative;
+    width: 300px;
+}
+
+.InputBox input{
+    width: 100%;
+    border: none;
+ border-bottom: 1px solid #ccc;
+ font-size: 15px;
+ border-radius: 5px;
+ outline: none;
+ padding: 10px;
+ margin: 20px 0;
+ /* outline: 1px solid #6ea820;  */
+}
+
+.InputBox span{
+    color: gray;
+    position: absolute;
+    left: -5px;
+    padding: 30px 10px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.InputBox input:valid ~span,
+.InputBox input:focus ~span
+{
+color: #6ea820;
+/* transform: translateX(10px) translateY(-20px); */
+padding: 0;
+margin: 7px 10px;
+font-size: 15px;
+background-color: white;
+}
+
+.InputBox input:valid,
+.InputBox input:focus{
+    border: 1px solid #6ea820;
+} 
+
+form{
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 10px;
+    position: relative;
+}
+
+form h3{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 0;
+}
+button{
+    background-color: #6C22A6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.backSpace{
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.wrong{
+    color: red;
+    text-align: center;
+}
+
+.secret-page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10%;
+    color: white;
+}
+.secret-page h3{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+li:hover{
+    color: #6C22A6;
+}
