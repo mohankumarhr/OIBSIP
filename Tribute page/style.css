@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.section1{
+    background-color: black;
+    display: flex;
+    height: 102vh;
+}
+
+.header{
+    flex-basis: 50%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    margin: auto;
+    padding: 0 10%;
+}
+
+.header h1{
+    font-size: 50px;
+}
+
+.header p{
+    font-size: 20px;
+}
+
+.img-main{
+    flex-basis: 50%;
+    position: relative;
+}
+
+h1{
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.img-main img{
+    position: absolute;
+    right: -90px;
+}
+.name{
+    width: 34ch;
+    animation: typing 2s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #8F43EE;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+
+.section2{
+    width: 100%;
+    background: rgb(132,132,132);
+    background: radial-gradient(circle, rgba(132,132,132,1) 0%, rgba(82,82,82,1) 100%);
+    height: 100%;
+    display: flex;
+}
+.img-sub{
+    flex-basis: 50%;
+}
+.img-sub img{
+    width: 100%;
+}
+.quotes{
+    margin: auto;
+    padding: 50px;
+    font-size: 25px;
+}
+.section3{
+    background-color: black;
+    padding: 50px 20%;
+}
+.section3 h2{
+    margin: 50px 50px;
+    font-size: 50px;
+}
+.section3 p{
+    margin: 0 50px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.footer{
+    border-top: 1px solid white;
+    margin-top: 50px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    color: #8F43EE;
+    text-decoration: underline;
+    cursor: pointer;
+}

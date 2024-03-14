@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #35374B;
+}
+
+.wrapper-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.todoadd{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #344955;
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 1px 2px 45px -10px rgba(0,0,0,0.75);
+}
+.todoadd input, .todoadd textarea{
+    font-size: 20px;
+    padding: 8px 15px;
+    padding-bottom: 0px;
+    width: 50vw;
+    outline: none;
+    resize: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.todoadd input::placeholder, .todoadd textarea::placeholder{
+    color: rgba(255,255,255,0.6);
+}
+
+.todoadd button{
+    width: fit-content;
+    padding: 10px 20px;
+    padding-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 20px;
+    background-color: #78A083;
+    color: rgba(255,255,255,0.6);
+}
+.tasks-container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+}
+.pending{
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    color: rgba(255,255,255,0.6);
+    font-size: 30px;
+}
+
+.tasks-pending, .tasks-complited{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap: 20px;
+}
+.task{
+    color: rgba(255,255,255,0.6);
+    background-color: #50727B;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 45px -10px rgba(0,0,0,0.75);
+    position: relative;
+}
+.task>p:first-child{
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.icons{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    position: absolute;
+    left: -70px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.task:hover .icons{
+    left: 10px;
+    z-index: 2;
+}
+.task:hover .dateTime{
+    visibility: hidden;
+}
+
+.icon{
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.6);
+    display: inline;
+}
+
+.icon:hover{
+    color: white;
+}
+
+.updateBtn.btnhide{
+    display: none;
+}
+.addBtn.btnhide{
+    display: none;
+}
+
+.dateTime{ 
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    transition: all 0.1s ease;
+}
+.icon.completed{
+    color: white;
+}

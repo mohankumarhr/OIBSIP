@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/fafa116bc2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-main">
+        <div class="wrapper-main">
+            <div class="todoadd">
+                <input id="title" type="text" placeholder="Title">
+                <textarea id="desc" name="todo" cols="1" rows="2" placeholder="Task Discription"></textarea>
+                <button id="AddBtn" class="addBtn">Add</button>
+                <button id="update" class="updateBtn btnhide">Update</button>
+            </div>
+            <div class="tasks-container">
+                <div class="pending">
+                    <h3>Pending</h3>
+                    <div class="tasks-pending">
+                    </div>
+                </div>
+                <div class="complited">
+                    <h3>Completed</h3>
+                    <div class="tasks-complited">
+                        <div class="task"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
